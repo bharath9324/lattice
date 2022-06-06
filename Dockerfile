@@ -17,9 +17,9 @@ RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - && \
 
 ENV PYTHONUNBUFFERED=1
 ENV SHELL=/bin/bash
-WORKDIR /Users/bharathsubramanyam/Development
+WORKDIR /dockerUser/Development
 RUN pip install --upgrade pip 
-COPY ./requirements.txt /Users/bharathsubramanyam/Development
+COPY ./requirements.txt /dockerUser/Development
 RUN pip install -r requirements.txt
 RUN npm install
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
