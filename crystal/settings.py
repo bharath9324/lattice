@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'crystal.web',
+    'crystal.frontend',
+    'crystal.api',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'crystal.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, "web", "templates")],
+        'DIRS': [os.path.join(BASE_DIR, "frontend", "templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
